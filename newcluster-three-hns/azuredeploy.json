@@ -298,8 +298,8 @@
             "properties": {
               "protocol": "Tcp",
               "port": 5800,
-              "intervalInSeconds": 10,
-              "numberOfProbes": 3
+              "intervalInSeconds": 5,
+              "numberOfProbes": 2
             }
           }
         ]

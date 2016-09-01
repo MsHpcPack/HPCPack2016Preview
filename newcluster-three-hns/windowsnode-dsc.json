@@ -56,6 +56,13 @@
         "description": "The availability set name"
       }
     },
+    "customData": {
+      "type": "string",
+      "defaultValue": "[base64('None')]",
+      "metadata": {
+        "description": "The custom data in base64 format"
+      }
+    },
     "secrets": {
       "type": "array",
       "defaultValue": [ ],
@@ -78,8 +85,7 @@
   },
   "variables": {
     "nicName": "[concat(parameters('vmName'), '-nic-', uniqueString(parameters('subnetId')))]",
-    "osDiskUri": "[concat('http://', parameters('storageAccountName'),'.blob.core.windows.net/vhds/', toLower(parameters('vmName')), '-os-', uniqueString(parameters('subnetId')), '.vhd')]",
-    "customData": "[base64(concat('HPCClusterName=MyHpcCluster\r\nImageCategory=public\r\nImageName=', parameters('imageReference').offer, '-', parameters('imageReference').sku, '\r\nVMSize=', parameters('vmSize')))]",
+    "osDiskUri": "[concat('http://', parameters('storageAccountName'),'.blob.core.windows.net/vhds/', toLower(parameters('vmName')), '-os-', uniqueString(parameters('subnetId')), '.vhd')]"
   },
   "resources": [
     {
@@ -120,7 +126,7 @@
           "computerName": "[parameters('vmName')]",
           "adminUsername": "[parameters('adminUsername')]",
           "adminPassword": "[parameters('adminPassword')]",
-          "customData": "[variables('customData')]",
+          "customData": "[parameters('customData')]",
           "secrets": "[parameters('secrets')]"
         },
         "storageProfile": {
