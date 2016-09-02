@@ -5,7 +5,7 @@ Deploy an HPC cluster with three head nodes:
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-Deploy an HPC cluster with single head nodes:
+Deploy an HPC cluster with single head node:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMsHpcPack%2FHPCPack2016Preview%2Fmaster%2Fnewcluster-single-hn%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
