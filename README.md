@@ -18,8 +18,7 @@ Deploy an HPC cluster in Azure with an all-in-one head node and a number of comp
 
 ## Pre-Requisites:
 
-A Personal Information Exchange(PFX) certificate is required to secure the communication between the HPC nodes.
-You need to upload the certificate to Azure Key Valut as a secret, the following PowerShell script is an example for your reference.
+A Personal Information Exchange(PFX) certificate is required to secure the communication between the HPC nodes. Before you deploy the cluster, you shall upload a PFX certificate to Azure Key Valut as a secret, see the [description of vaultCertificates.certificateUrl]( https://msdn.microsoft.com/en-us/library/mt163591.aspx#bk_vaultcert). The following PowerShell script is an example for your reference.
 
     #Give the following values
     $VaultName = "mytestvault"
