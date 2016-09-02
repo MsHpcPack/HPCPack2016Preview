@@ -220,7 +220,7 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "[concat(variables('artifactsBaseUrl'), '/hpc-domain-controller.json')]",
+          "uri": "[concat(variables('singleHNBaseUrl'), '/hpc-single-headnode.json')]",
           "contentVersion": "1.0.0.0"
         },
         "parameters": {
@@ -308,7 +308,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(parameters('clusterName'),'/installHeadNode')]",
+      "name": "[concat(parameters('clusterName'),'/installSingleHeadNode')]",
       "apiVersion": "[variables('apiVersion')]",
       "location": "[resourceGroup().location]",
       "dependsOn": [
