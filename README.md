@@ -1,7 +1,7 @@
 # Microsoft HPC Pack 2016 Preview
 
 ## Deploy an HPC cluster in Azure
-**Note** see Pre-Requisites below before starting deployment
+**Note:** see Pre-Requisites below before starting deployment
 ### Deploy an HPC cluster with three head nodes in Azure
 Deploy an HPC cluster in Azure with one domain controller, one Database Server with SQL Server 2014 Standard version, three head nodes and a number of compute nodes.
 
