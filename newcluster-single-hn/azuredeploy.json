@@ -262,6 +262,9 @@
           "subnetId": {
             "value": "[variables('subnetRef')]"
           },
+          "secrets": {
+            "value": "[variables('certSecrets')]"
+          },
           "scriptBaseUri": {
             "value": "[variables('artifactsBaseUrl')]"
           }

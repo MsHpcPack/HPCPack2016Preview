@@ -62,6 +62,13 @@
         "description": "The Id of the subnet in which the node is created"
       }
     },
+    "secrets": {
+      "type": "array",
+      "defaultValue": [ ],
+      "metadata": {
+        "description": "The property 'osProfile/secrets', specify the set of certificates that shall be installed on the VM"
+      }
+    },
     "privateDomainName": {
       "type": "string",
       "metadata": {
@@ -92,7 +99,8 @@
         "osProfile": {
           "computerName": "[parameters('vmName')]",
           "adminUsername": "[parameters('adminUsername')]",
-          "adminPassword": "[parameters('adminPassword')]"
+          "adminPassword": "[parameters('adminPassword')]",
+          "secrets": "[parameters('secrets')]"
         },
         "storageProfile": {
           "imageReference": "[parameters('imageReference')]",
