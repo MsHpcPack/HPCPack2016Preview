@@ -105,7 +105,7 @@
     "cnAvailabilitySetNumber": "[add(div(parameters('computeNodeNumber'), variables('nbrVMPerAvailabilitySet')), 1)]",
     "uniqueSuffix": "[uniqueString(variables('subnetRef'))]",
     "uniqueNicSuffix": "[concat('-nic-', variables('uniqueSuffix'))]",
-    "nicNameHN": "[concat(parameters('clusterName'), variables('uniqueNicSuffix'))]"
+    "nicNameHN": "[concat(parameters('clusterName'), variables('uniqueNicSuffix'))]",
     "certSecrets": [
       {
         "sourceVault": {
