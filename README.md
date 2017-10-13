@@ -1,6 +1,7 @@
 # Deploy an HPC Pack cluster in Azure with Microsoft HPC Pack 2016 Update 1 Preview
 
-### **Note:** see [Pre-Requisites](#prerequisites) section on this page before starting your deployment.
+### **Note:** 
+see [Pre-Requisites](#prerequisites) section on this page before starting your deployment.
 
 Choose one from the following templates and click "Deploy to Azure" button to deploy.
 
@@ -148,3 +149,7 @@ Before deploying the HPC cluster, you shall upload the PFX certificate to an Azu
     "Vault Resource Group   :   $VaultRG"
     "Certificate URL        :   $($hpcSecret.Id)"
     "Certificate Thumbprint :   $thumbprint"
+
+---
+### 1. Domain joined compute nodes are not automatically assigned to the "Default ComputeNode Template"
+You will have to manually assign the domain joined compute nodes to the "Default ComputeNode Template"
