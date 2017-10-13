@@ -2,6 +2,7 @@
 
 ### **Note:** 
 see [Pre-Requisites](#prerequisites) section on this page before starting your deployment.
+see [Known Issues](#knownissues) section on this page to check the known issues.
 
 Choose one from the following templates and click "Deploy to Azure" button to deploy.
 
@@ -151,5 +152,6 @@ Before deploying the HPC cluster, you shall upload the PFX certificate to an Azu
     "Certificate Thumbprint :   $thumbprint"
 
 ---
+## <a name="knownissues)"></a>Known Issues:
 ### 1. Domain joined compute nodes are not automatically assigned to the "Default ComputeNode Template"
 You will have to manually assign the domain joined compute nodes to the "Default ComputeNode Template"
