@@ -2,7 +2,7 @@
 
 ### **Note:** 
 see [Pre-Requisites](#prerequisites) section on this page before starting your deployment.
-see [Known Issues](#knownissues) section on this page to check the known issues.
+see [Known Issues](#known-issues) section on this page to check the known issues.
 
 Choose one from the following templates and click "Deploy to Azure" button to deploy.
 
@@ -152,6 +152,12 @@ Before deploying the HPC cluster, you shall upload the PFX certificate to an Azu
     "Certificate Thumbprint :   $thumbprint"
 
 ---
-## <a name="knownissues)"></a>Known Issues:
+## <a name="known-issues)"></a>Known Issues:
 ### 1. Domain joined compute nodes are not automatically assigned to the "Default ComputeNode Template"
 You will have to manually assign the domain joined compute nodes to the "Default ComputeNode Template"
+
+### 2. Some compute nodes not shown up
+Some compute nodes may fail to report themselves to the cluster during deployment. The workaround is to reboot the virtual machines which are not shown up.
+
+### 3. Cluster manager keeps crashing with error "Setting instance 'TemplateId' has not been set".
+This issue happens when there are unapproved nodes and you click "Node Templates" on cluster manager. The workaround is to remove the folder %localappdata%\Microsoft\Hpc\4.0\AdminConsole and re-open the cluster manager again. Then you can assign the unapproved nodes to a node template.
