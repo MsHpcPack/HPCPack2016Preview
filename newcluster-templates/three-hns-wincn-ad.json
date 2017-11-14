@@ -104,7 +104,7 @@
         "ComputeNodeOnWindowsServer2012R2",
         "ComputeNodeOnWindowsServer2016",
         "ComputeNodeWithExcelOnWindowsServer2012R2",
-        "ComputeNodeWithExcelOnWindowsServer2016",
+        "ComputeNodeWithExcelOnWindowsServer2016"
       ],
       "metadata": {
         "description": "The VM image of the compute nodes."
