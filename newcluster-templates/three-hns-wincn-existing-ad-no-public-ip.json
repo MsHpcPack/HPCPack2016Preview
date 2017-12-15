@@ -607,7 +607,10 @@
             "VNet": "[parameters('virtualNetworkName')]",
             "Subnet": "[parameters('subnetName')]",
             "Location": "[resourceGroup().location]",
-            "ResourceGroup": "[parameters('virtualNetworkResourceGroupName')]"
+            "ResourceGroup": "[parameters('virtualNetworkResourceGroupName')]",
+            "VaultResourceGroup": "[parameters('VaultResourceGroup')]",
+            "CertificateUrl": "[parameters('CertificateUrl')]",
+            "CNNamePrefix": "[parameters('computeNodeNamePrefix')]"
           }
         },
         "protectedSettings": {
